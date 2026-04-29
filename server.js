@@ -8,6 +8,14 @@
  * Railway auto-detects PORT from environment.
  * Zero npm dependencies.
  */
+
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("AfriQuote API is running");
+});
+
 'use strict';
 
 const fs   = require('fs');
